@@ -2,9 +2,82 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <style>
+        th, td{
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
-$END$
+<h1>Market Research Survey</h1>
+<p>Please take a few moments to complete this satisfaction survey.</p>
+<form>
+    <h6>What is your age range?</h6>
+    <select>
+        <option>18-24</option>
+        <option>25-34</option>
+        <option>35-50</option>
+        <option>50+</option>
+    </select>
+    <h6>What is your yearly income range?</h6>
+    <select>
+        <option>0-25$</option>
+        <option>25-50$</option>
+        <option>50-100$</option>
+        <option>100$+</option>
+    </select>
+    <h6>Gender Identity</h6>
+    <input type="radio" name="gender"> Male <br>
+    <input type="radio" name="gender"> Female <br>
+    <input type="radio" name="gender"> Nonbinary <br>
+    <input type="radio" name="gender"> Other <br>
+    <input type="text">
+    <h6>Which of the following products have your purchased in the last 2 months. Please check all that apply.</h6>
+<input type="checkbox">Product 1 <br>
+    <input type="checkbox">Product 2 <br>
+    <input type="checkbox">Product 3 <br>
+    <h6>How often would you use our new product?</h6>
+    <input type="radio" name="product"> Daily <br>
+    <input type="radio" name="product"> weekly <br>
+    <input type="radio" name="product"> Monthly <br>
+    <h6>what would you pay for the new product?</h6>
+    $<input type="text"> . <input type="text">
+    <h6>What features would you like to sê in the new product</h6>
+    <input type="text" style="height: 50px">
+    <h6>Please rate your level of agreement with the following statenments</h6>
+    <table >
+        <tr>
+            <th></th>
+            <th>Strongly Disagree</th>
+            <th>Disagree</th>
+            <th>Agree</th>
+            <th>Strongly Agree</th>
+        </tr>
+        <tr>
+            <th>Our products are priced fairly</th>
+            <td><input type="radio" name="1" style="text-align: center">1</td>
+            <td><input type="radio" name="1" style="text-align: center">2</td>
+            <td><input type="radio" name="1" style="text-align: center">3</td>
+            <td><input type="radio" name="1" style="text-align: center">4</td>
+        </tr>
+        <tr>
+            <th>Our products are high quality</th>
+            <td><input type="radio" name="2" style="text-align: center">1</td>
+            <td><input type="radio" name="2" style="text-align: center">2</td>
+            <td><input type="radio" name="2" style="text-align: center">3</td>
+            <td><input type="radio" name="2" style="text-align: center">4</td>
+        </tr>
+        <tr>
+            <th>You would recommed our product to a friend or coworker</th>
+            <td><input type="radio" name="3" style="text-align: center">1</td>
+            <td><input type="radio" name="3" style="text-align: center">2</td>
+            <td><input type="radio" name="3"style="text-align: center">3</td>
+            <td><input type="radio" name="3" style="text-align: center">4</td>
+        </tr>
+    </table>
+<button type="submit" >Submit</button>
+</form>
+
 </body>
 </html>
