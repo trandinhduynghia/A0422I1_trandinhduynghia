@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var inputly;
+    var inputhoa;
+    var inputsinh;
+
+    inputly = prompt("Nhập điểm ly:");
+    inputhoa = prompt("Nhập điểm hóa:");
+    inputsinh = prompt("Nhập điểm sinh;");
+
+    var ly = parseFloat(inputly);
+    var hoa = parseFloat(inputhoa);
+    var sinh = parseFloat(inputsinh);
+
+    var diemtb = parseFloat((ly + hoa + sinh) /3);
+    document.write("Điểm trung bình là: "+ diemtb);
+    var tongdiem = parseFloat(ly + hoa + sinh);
+    document.write("<br/>")
+    document.write("Tổng điểm là: "+ tongdiem);
+</script>
+
+</body>
+</html>
