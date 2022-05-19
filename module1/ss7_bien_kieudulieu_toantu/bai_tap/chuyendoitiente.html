@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Amount</th>
+        <th>FromCurrency</th>
+        <th>ToCurrency</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td><input type="number" id="money"></td>
+        <td>
+            <select id="from">
+                <option value="23000">VietNam</option>
+                <option value="1">USD</option>
+            </select>
+        </td>
+        <td>
+            <select id="to">
+                <option value="23000">VietNam</option>
+                <option value="1">USD</option>
+            </select>
+        </td>
+        <td>
+            <button style="background-color: blueviolet; color: white" value="covert" onclick="covert()">Covert</button>
+        </td>
+    </tr>
+</table>
+<div id="tien"></div>
+<script>
+    function covert() {
+
+        let money = parseFloat(document.getElementById("money").value);
+        let from = document.getElementById("from").value;
+        let to = document.getElementById("to").value;
+        let tien = parseFloat(money * to / from);
+        alert("Số tiền sau khi chuyển đổi: " + tien);
+    }
+</script>
+
+</body>
+</html>
