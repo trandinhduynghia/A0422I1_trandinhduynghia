@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+
+    <img src="bong.jpg" height="183" width="183" id="bong"/>
+    <p>Click vào nút bên </p>
+    <button type="button" onclick="moveRight()">Click me</button>
+</form>
+</body>
+<script>
+    let anh = null;
+    anh = document.getElementById("bong");
+    function init() {
+        anh = document.getElementById("bong");
+        anh.style.position = 'relative';
+        anh.style.left = '0px';
+    }
+    function moveRight() {
+        let anh = document.getElementById("bong");
+        anh.style.left = parseInt(anh.style.left) + 10 + 'px';
+    }
+    window.onload = init();
+
+</script>
+</html>
