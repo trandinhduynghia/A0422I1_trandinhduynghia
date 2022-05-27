@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let a = parseFloat(prompt("Nhập vào cạnh thứ nhất: "));
+    let b = parseFloat(prompt("Nhập vào cạnh thứ hai:"));
+    let c = parseFloat(prompt("Nhập vào cạnh thứ ba:"));
+
+    if(a > 0 && b > 0 && c > 0 && a+b>c && b+c>a && a+c>b){
+        alert("Ba cạnh bạn nhập vào là ba cạnh tam giác");
+    }else{
+        alert("Ba cạnh bạn nhập vào không phải là ba cạnh tam giác");
+    }
+</script>
+</html>

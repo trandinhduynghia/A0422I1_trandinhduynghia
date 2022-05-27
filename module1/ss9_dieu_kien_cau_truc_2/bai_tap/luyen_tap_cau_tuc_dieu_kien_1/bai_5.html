@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let diemGiuaKy = parseFloat(prompt("Nhập vào điểm giữa kỳ: "));
+    let diemCuoiKy = parseFloat(prompt("Nhập vào điểm cuối kỳ: "));
+
+
+    let diemtb = parseFloat((diemCuoiKy+diemGiuaKy*3)/4);
+
+    if(diemtb < 5){
+
+        alert("Bạn được học sinh yếu");
+    }else if(diemtb < 6.5){
+
+        alert("Bạn được học sinh trung bình");
+    }else if (diemtb < 8){
+
+        alert("Bạn được học sinh khá");
+    }else{
+
+        alert("Bạn được học sinh giỏi");
+    }
+</script>
+</html>

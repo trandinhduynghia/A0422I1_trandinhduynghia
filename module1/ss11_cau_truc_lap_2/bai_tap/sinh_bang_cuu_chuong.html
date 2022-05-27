@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p STYLE="color: blue; background-color: black; text-align: center; height: 25%">BẢNG CỬU CHƯƠNG</p>
+
+</body>
+<script>
+        document.write("<table border=1 width=100% color= yellow>")
+        for(i=1;i<=10;i++)
+        {
+            document.write("<tr>")
+            for(n=1;n<=9;n++)
+                document.write("<td style='color: #d61b06'>" +n + "x" + i +"="+ (n*i));
+            document.write("</td>");
+            document.write("</tr>")
+        }
+        document.write("</tr></table>")
+
+</script>
+</html>

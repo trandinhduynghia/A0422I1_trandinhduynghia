@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let doanhthu = parseFloat(prompt("Bạn nhập vào doanh thu"));
+    let hoahong = parseFloat();
+
+    if(doanhthu <= 20000000){
+        hoahong = doanhthu * 0.5;
+        alert("Hoa hồng của bạn là: " + hoahong);
+    }else if(doanhthu <= 50000000){
+        hoahong = doanhthu * 1;
+        alert("Hoa hồng của bạn là: "+ hoahong);
+    }else{
+        hoahong = doanhthu * 2;
+        alert("Hoa hồng của bạn là: "+ hoahong);
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<img id="img-a" src="images/Hinh 1a.png" height="500" width="130" onclick="changeImageA()"/>
+
+<img id="img-b"src="images/Hinh 2b.png" height="500" width="130" ONCLICK="changeImageB()"/>
+
+<img id="img-c"src="images/Hinh 3c.png" height="500" width="130" onclick="changeImageC()"/>
+
+<img id="img-d"src="images/Hinh 1d.png" height="500" width="130" onclick="changeImageD()"/>
+
+<img id="img-e"src="images/Hinh 2e.png" height="500" width="130" onclick="changeImageE()"/>
+
+</body>
+<script>
+    let tempA = 0;
+    let tempB = 0;
+    let tempC = 0;
+    let tempD = 0;
+    let tempE = 0;
+
+    function changeImageA() {
+        if (tempA == 0) {
+            document.getElementById("img-a").src = "images/Hinh 2a.png";
+            tempA++;
+        } else if (tempA == 1) {
+            document.getElementById("img-a").src = "images/Hinh 3a.png";
+            tempA++;
+        } else {
+            document.getElementById("img-a").src = "images/Hinh 1a.png";
+            tempA = 0;
+            check();
+        }
+    }
+    function changeImageB() {
+        if (tempB == 0) {
+            document.getElementById("img-b").src = "images/Hinh 2b.png";
+            tempB++;
+        } else if (tempA == 1) {
+            document.getElementById("img-b").src ="images/Hinh 3b.png" ;
+            tempB++;
+        } else {
+            document.getElementById("img-b").src = "images/Hinh 1b.png";
+            tempB = 0;
+            check();
+        }
+    }
+    function changeImageC() {
+        if (tempC == 0) {
+            document.getElementById("img-c").src = "images/Hinh 2c.png";
+            tempC++;
+        } else if (tempA == 1) {
+            document.getElementById("img-c").src = "images/Hinh 3c.png";
+            tempC++;
+        } else {
+            document.getElementById("img-c").src = "images/Hinh 1c.png";
+            tempC = 0;
+            check();
+        }
+    }
+    function changeImageD() {
+        if (tempD == 0) {
+            document.getElementById("img-d").src = "images/Hinh 2d.png";
+            tempD++;
+        } else if (tempD == 1) {
+            document.getElementById("img-d").src = "images/Hinh 3d.png";
+            tempD++;
+        } else {
+            document.getElementById("img-d").src = "images/Hinh 1d.png";
+            tempD = 0;
+            check();
+        }
+    }
+    function changeImageE() {
+        if (tempE == 0) {
+            document.getElementById("img-e").src = "images/Hinh 2e.png";
+            tempE++;
+        } else if (tempE == 1) {
+            document.getElementById("img-e").src = "images/Hinh 3e.png";
+            tempE++;
+        } else {
+            document.getElementById("img-e").src = "images/Hinh 1e.png";
+            tempE = 0;
+            check();
+        }
+    }
+    function check() {
+        if (tempA == tempB && tempB == tempC && tempC == tempD && tempD == tempE ) {
+            alert("Chúc mừng bạn đã ghép đúng")
+        }
+    }
+ </script>
+</html>

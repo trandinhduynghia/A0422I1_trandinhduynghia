@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let dien = parseInt(prompt("Nhập vào số Kwh tiêu thụ điện:"));
+    let tien = parseFloat();
+
+    if(dien < 100){
+        tien = dien * 600;
+        alert("Số tiên bạn phải trả là: "+ tien);
+    }else if(dien < 150){
+        tien = dien * 700;
+        alert("Số tiên bạn phải trả là: "+ tien);
+    }else if(dien < 200){
+        tien = dien * 900;
+        alert("Số tiên bạn phải trả là: "+ tien);
+    }else{
+        tien = dien * 1100;
+        alert("Số tiên bạn phải trả là: "+ tien);
+    }
+</script>
+</html>

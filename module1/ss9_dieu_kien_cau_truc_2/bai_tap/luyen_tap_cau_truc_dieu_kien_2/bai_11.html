@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let luong = parseFloat(prompt("Nhập vào tiền lương của bạn:"));
+    let thue = parseFloat();
+
+    if(luong < 7){
+        thue = luong * 0.1;
+        alert("Số tiên thuế thu nhập cá nhân bạn trả là: "+ thue);
+    }else if(luong < 15){
+        thue = luong * 0.2;
+        alert("Số tiên thuế thu nhập cá nhân bạn trả là: "+ thue);
+    }else{
+        thue = luong * 0.3;
+        alert("Số tiên thuế thu nhập cá nhân bạn trả là: "+ thue);
+    }
+</script>
+</html>
