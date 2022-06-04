@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="bai1()">bai1</button>
+<button onclick="bai2()">bai2</button>
+<button onclick="bai3()">bai3</button>
+</body>
+<script>
+    function bai1() {
+        let color = ["Red", "Green", "White", "Back"];
+        alert(color.toString());
+        alert(color.join());
+        alert(color.join('+'));
+    }
+    function bai2() {
+        const num= prompt("Nhập vào số: ");
+        const str = num.toString();
+        const result = [str[0]];
+
+        for(let x=1; x<str.length; x++)
+        {
+            if((str[x-1]%2 === 0)&&(str[x]%2 === 0))
+            {
+                result.push('-', str[x]);
+            }
+            else
+            {
+                result.push(str[x]);
+            }
+        }
+        alert("Số sau khi chuyển: " + result.join(" "));
+
+
+    }
+    function bai3() {
+        var str = prompt("Nhập vào mảng:");
+        var UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        var LOWER = 'abcdefghijklmnopqrstuvwxyz';
+        var result = [];
+
+        for(var x=0; x<str.length; x++)
+        {
+            if(UPPER.indexOf(str[x]) !== -1)
+            {
+                result.push(str[x].toLowerCase());
+            }
+            else if(LOWER.indexOf(str[x]) !== -1)
+            {
+                result.push(str[x].toUpperCase());
+            }
+            else
+            {
+                result.push(str[x]);
+            }
+        }
+        alert("Mảng sau khi chuyển: "+ result.join(" "));
+    }
+</script>
+</html>

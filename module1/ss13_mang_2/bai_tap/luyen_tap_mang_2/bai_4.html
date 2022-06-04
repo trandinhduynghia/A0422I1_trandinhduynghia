@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    mang = " tran dinh duy nghĩa";
+    let dem =0;
+    if(mang[0] != " "){
+        dem++;
+    }
+    for(let i = 0; i < mang.length-1; i++){
+        if(mang[i] == " " && mang[i+1] != " "){
+            dem ++;
+        }
+
+    }
+    alert("Mảng là: "+ mang);
+    alert("Số từ  trong mảng là: "+dem);
+
+
+</script>
+</html>

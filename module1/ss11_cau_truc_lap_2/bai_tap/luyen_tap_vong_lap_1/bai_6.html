@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let tong = 0;
+    let count = 0;
+    let dayso = "";
+    for(i = 0; ;i++){
+        if(i % 7 == 0){
+            dayso = dayso + i +" ";
+            tong = tong + i;
+            count ++;
+            if(count == 30) break;
+        }
+    }
+    alert("Các số là:" + dayso);
+    alert("Tổng của 30 số đầu tiên chia hết cho 7: "+ tong);
+</script>
+</html>

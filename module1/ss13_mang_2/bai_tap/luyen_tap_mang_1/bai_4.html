@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let so = [1, 5, 6, 9, 99, 15, 50, 55, 67, 10];
+    let i = 0;
+    let j = so.length-1;
+    while(i < j){
+        let b = so[i];
+        so[i] = so[j];
+        so[j] = b;
+        i++;
+        j--;
+    }
+
+    alert("Mảng sau khi đảo: "+ so);
+</script>
+</html>

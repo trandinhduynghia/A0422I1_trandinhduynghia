@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let so = [1, 5, 6, 9, 99, 15, 50, 55, 67, 10];
+    let max = so[0] ;
+    let tong = 0;
+    let dem = 0;
+    for(let i=0; i<so.length; i++){
+        tong += so[i];
+        dem ++;
+        if(so[i] > max){
+            max = so[i];
+        }
+    }
+    alert(so.join(" "));
+    alert("Phần tử lớn nhất trong mảng là: "+ max);
+    alert("Gía trị trung bình của các phần tử trong mảng: "+ tong/dem);
+</script>
+</html>
