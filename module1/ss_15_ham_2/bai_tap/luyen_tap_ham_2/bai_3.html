@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let so = parseInt(prompt("Nhập vào số: "));
+    giaiThua(so);
+
+    function giaiThua(so) {
+        let giaiThưa = 1;
+        if(so == 0 ){
+            alert("Giai thừa của 0! = 1");
+            return 0;
+        }
+        for(let i =1; i <= so; i++){
+            giaiThưa *= i;
+
+        }
+        alert("Giai thừa của "+ so+"! = "+giaiThưa);
+
+    }
+</script>
+</html>

@@ -9,12 +9,17 @@
 </body>
 <script>
     let mang = [1, 5, 6, 9, 99, 15, 50, 55, 67, 10];
-    let viTri = prompt("Nhập vào vị trí cần xóa: ");
+    let so = prompt("Nhập vào số cần xóa: ");
 
-    for(let i=viTri; i<mang.length - 1 ; i++){
-        mang[i] = mang[i+1];
+    for (let i = 0; i < mang.length; i++) {
+        if (so == mang[i]) {
+            for (let j = i; j < mang.length; j++) {
+                mang[j] = mang[j + 1];
+            }
+            break;
+        }
     }
-    mang.length-- ;
+    mang.length--;
 
     alert(mang.join(" "));
 </script>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="daochuoi()">Đảo chuỗi</button>
+<button onclick="doichuoisanghoa()">Đổi chuổi đã cho sang hoa</button>
+<button onclick="doichuoisangthuong()">Đổi chuổi đã cho sang thuong</button>
+<button onclick="doichuoivuahoavuathuong()">Đổi chuổi đã cho vừa hoa vừa thường</button>
+</body>
+<script>
+    function daochuoi() {
+        chuoi = ['n','g','h','i','a'];
+        let i = 0;
+        let j = chuoi.length -1;
+        while (i < j){
+            let b = chuoi[i];
+            chuoi[i]=chuoi[j];
+            chuoi[j]=b;
+            i++;
+            j--;
+        }
+        alert(chuoi.join(" "));
+    }
+    function doichuoisanghoa() {
+        var str = 'tran dinh duy nghia';
+        const UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        const LOWER = 'abcdefghijklmnopqrstuvwxyz';
+        const result = [];
+
+        for(let x=0; x<str.length; x++)
+        {
+
+            if(LOWER.includes(str[x]))
+            {
+                result.push(str[x].toUpperCase());
+            }
+            else
+            {
+                result.push(str[x]);
+            }
+        }
+        alert(result.join(" "));
+    }
+    function doichuoisangthuong() {
+        var str = 'TRAN DINH DUY NGHIA';
+        const UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        const LOWER = 'abcdefghijklmnopqrstuvwxyz';
+        const result = [];
+
+        for(let x=0; x<str.length; x++)
+        {
+
+            if(UPPER.includes(str[x]))
+            {
+                result.push(str[x].toLowerCase());
+            }
+            else
+            {
+                result.push(str[x]);
+            }
+        }
+        alert(result.join(" "));
+    }
+    function doichuoivuahoavuathuong() {
+        var str = 'TRAN DINH duy nghia';
+        const UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        const LOWER = 'abcdefghijklmnopqrstuvwxyz';
+        const result = [];
+
+        for(let x=0; x<str.length; x++)
+        {
+            if(UPPER.includes(str[x]))
+            {
+                result.push(str[x].toLowerCase());
+            }
+            else if(LOWER.includes(str[x]))
+            {
+                result.push(str[x].toUpperCase());
+            }
+            else
+            {
+                result.push(str[x]);
+            }
+        }
+        alert(result.join(''));
+
+    }
+
+</script>
+</html>

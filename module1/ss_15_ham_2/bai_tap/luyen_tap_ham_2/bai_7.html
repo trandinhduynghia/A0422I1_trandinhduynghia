@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let nhap1 = parseFloat(prompt("Nhập vào số thứ nhất: "));
+    let nhap2 = parseFloat(prompt("Nhập vào số thứ hai: "));
+    doiCho(nhap1,nhap2);
+
+    function doiCho(a,b) {
+        alert("Hai số nhập vào là: " + a + ", "+b);
+        let c = b;
+        b = a;
+        a = c;
+        alert("Hai số sau khi đổi chỗ là: "+a + ", "+b);
+
+
+    }
+</script>
+</html>

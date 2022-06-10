@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let a = 5;
+    let b = 7;
+    let ucln;
+    let bcnn;
+
+    for(let i = 1; i <= a || i <=b; i++) {
+        if (a % i == 0 && b % i == 0) {
+            ucln = i;
+        }
+    }
+    alert("ước chung lớn nhất là: "+ucln);
+
+    for(let j = 1; j <= a*b; j++) {
+        if (j % a == 0 && j % b == 0) {
+            bcnn = j;
+        }
+    }
+    alert("bội chung lớn nhất: "+bcnn);
+
+</script>
+</html>

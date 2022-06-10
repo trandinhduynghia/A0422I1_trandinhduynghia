@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let nhap = [123];
+    daoNguoc(nhap);
+
+    function daoNguoc() {
+        i = 0;
+        j = nhap.length-1;
+        while (i < j){
+            let b = nhap[i];
+            nhap[i] = nhap[j];
+            nhap[j] = b;
+            i++;
+            j--;
+        }
+        alert(nhap);
+    }
+</script>
+</html>

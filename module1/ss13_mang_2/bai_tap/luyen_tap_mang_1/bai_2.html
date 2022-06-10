@@ -9,12 +9,12 @@
 </body>
 <script>
     let so = [1, 5, 6, 9, 99, 15, 50, 55, 67, 10];
-    let max = so[0] ;
-    let viTri = 0;
+    let max = 0 ;
+    let viTri ;
     for(let i=0; i<so.length; i++){
         if(so[i] > max){
             max = so[i];
-            viTri ++;
+            viTri = i;
         }
     }
     alert(so.join(" "));

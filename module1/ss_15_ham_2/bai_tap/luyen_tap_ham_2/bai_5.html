@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let a = parseFloat(prompt("Nhập vào a: "));
+    let b = parseFloat(prompt("Nhập vào b: "));
+    let c = parseFloat(prompt("Nhập vào c: "));
+    min(a, b, c);
+    function min(a, b, c) {
+        let min = a;
+        if(min > b){
+            min = b;
+        }
+        if(min > c){
+            min = c;
+        }
+        alert("Số bé nhất là: "+min);
+    }
+</script>
+</html>
