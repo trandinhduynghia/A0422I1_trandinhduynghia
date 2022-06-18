@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    function hinhchunhat(dai, rong) {
+        this.dai = dai;
+        this. rong = rong;
+
+        this.getDientich = function () {
+            return dai * rong;
+
+        }
+        this.getChuvi = function () {
+            return (dai + rong) / 2;
+
+        }
+        this.setDai = function (dai) {
+            this.dai = dai;
+
+        }
+        this.setRong = function (rong) {
+            this.rong = rong;
+
+        }
+
+    }
+
+
+    let chunhat = new hinhchunhat(10,5);
+    let dientich = chunhat.getDientich();
+    let chuvi = chunhat.getChuvi();
+
+    alert("Diện tích HCN: "+dientich+" Chu vi HCN: "+chuvi);
+</script>
+</html>

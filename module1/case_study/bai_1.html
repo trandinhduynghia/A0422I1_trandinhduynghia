@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let rong = parseInt(prompt("Nhập vào chiều rộng: "));
+    let dai = parseInt(prompt("Nhập vào chiều dài: "));
+
+    for(let i =0; i< dai; i++){
+        for(let j = 0; j < rong; j++){
+            if(i == 0 || i == dai - 1 || j == 0 || j == rong - 1){
+                document.write("*");
+            }else{
+                document.write("&nbsp&nbsp");
+            }
+        }
+        document.write("<br>");
+    }
+</script>
+</html>

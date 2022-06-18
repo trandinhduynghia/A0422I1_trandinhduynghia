@@ -8,10 +8,11 @@
 
 </body>
 <script>
-    let nhap = [123];
+    let nhap = [1,2,3];
+    alert("Mảng số nguyên: "+nhap.join(" "));
     daoNguoc(nhap);
 
-    function daoNguoc() {
+    function daoNguoc(nhap) {
         i = 0;
         j = nhap.length-1;
         while (i < j){
@@ -21,7 +22,7 @@
             i++;
             j--;
         }
-        alert(nhap);
+        alert("Mảng sau khi đảo ngược: "+nhap.join(" "));
     }
 </script>
 </html>

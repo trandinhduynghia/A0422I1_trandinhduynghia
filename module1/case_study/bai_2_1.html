@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let luong = parseFloat(prompt("Nhập vào lương: "));
+
+    if(luong < 0){
+        alert("Lương không phù hợp!");
+        luong = parseFloat(prompt("Nhập vào lương: "));
+    }
+
+    if(luong > 15000000){
+         thue = luong * 0.2;
+         luongrong = luong - thue;
+        alert("Thuế thu nhập cá nhân là: "+ thue);
+        alert("Lương rồng là: "+ luongrong);
+    }else if(luong < 15000000){
+        thue = luong * 0.1;
+        luongrong = luong - thue;
+        alert("Thuế thu nhập cá nhân là: "+ thue);
+        alert("Lương rồng là: "+ luongrong);
+    }else if(luong < 7000000){
+        thue = luong * 0.05;
+        luongrong = luong - thue;
+        alert("Thuế thu nhập cá nhân là: "+ thue);
+        alert("Lương rồng là: "+ luongrong);
+    }
+</script>
+</html>
