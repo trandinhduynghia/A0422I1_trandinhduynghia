@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let xau = "abca";
+    let dem = 0;
+    let tam;
+
+    for(let i=0; i<xau.length; i++){
+        for(let j=0; j<xau.length; j++){
+            if(xau[j] == xau[i]){
+                tam = 0;
+                break;
+            }else{
+                tam = 1;
+            }
+        }
+        if(tam == 1){
+            dem++;
+
+        }
+        return dem;
+    }
+    alert(dem);
+</script>
+</html>

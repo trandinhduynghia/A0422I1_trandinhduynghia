@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let menu = ["1.cafe", "2.cam vắt", "3.nước ép cà rốt", "4.nước ép cà chua", "5.nước lọc", "6.nước dừa", "7.thoát"];
+    alert(menu.join(" "));
+    let nuoc = parseInt(prompt("Mời bạn lựa chọn món nước: "));
+    switch (nuoc) {
+        case 1:
+            alert("cafe có giá 10000VND");
+            soluong = parseInt(prompt("Nhập vào số lượng: "));
+            thanhtien = soluong * 10000;
+            alert("Số tiền bạn cần thanh toán: "+thanhtien);
+            break;
+        case 2:
+            alert("cam vắt có giá 25000VND");
+            soluong = parseInt(prompt("Nhập vào số lượng: "));
+            thanhtien = soluong * 25000;
+            alert("Số tiền bạn cần thanh toán: "+thanhtien);
+            break;
+        case 3:
+            alert("nước ép cà rốt có giá 20000VND");
+            soluong = parseInt(prompt("Nhập vào số lượng: "));
+            thanhtien = soluong * 20000;
+            alert("Số tiền bạn cần thanh toán: "+thanhtien);
+            break;
+        case 4:
+            alert("nước ép cà chua có giá 20000VND");
+            soluong = parseInt(prompt("Nhập vào số lượng: "));
+            thanhtien = soluong * 20000;
+            alert("Số tiền bạn cần thanh toán: "+thanhtien);
+            break;
+        case 5:
+            alert("nước lọc có giá 15000VND");
+            soluong = parseInt(prompt("Nhập vào số lượng: "));
+            thanhtien = soluong * 15000;
+            alert("Số tiền bạn cần thanh toán: "+thanhtien);
+            break;
+        case 6:
+            alert("nước dừa có giá 30000VND");
+            soluong = parseInt(prompt("Nhập vào số lượng: "));
+            thanhtien = soluong * 30000;
+            alert("Số tiền bạn cần thanh toán: "+thanhtien);
+            break;
+        case 7:
+            alert("Bạn thoát không chọn món!");
+            break;
+            default:
+                alert("Chọn món không thành công!");
+                break;
+    }
+
+</script>
+</html>

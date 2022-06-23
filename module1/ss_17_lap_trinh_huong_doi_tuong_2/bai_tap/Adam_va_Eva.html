@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    class Apple{
+        constructor(khoiluong) {
+            this.khoiluong = khoiluong;
+        }
+
+        khoiLuong(){
+            this.khoiluong = 10;
+
+        }
+    }
+    class Human{
+        constructor(ten, gioitinh, cannang) {
+            this.ten = ten;
+            this.gioitinh = gioitinh;
+            this.cannang = cannang;
+        }
+        noi(){
+            alert("Chào bạn! Tôi tên là "+ this.ten);
+        }
+        kiemtratao(){
+            alert("Khối lượng quả táo là: "+ t);
+        }
+    }
+
+    let human = new Human("Nghĩa", "nam", "50");
+    human.noi();
+
+</script>
+</html>

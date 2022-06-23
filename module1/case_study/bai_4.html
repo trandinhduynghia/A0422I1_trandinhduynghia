@@ -9,15 +9,18 @@
 </body>
 <script>
     let h = parseInt(prompt("Nhập vào chiều cao: "));
-
-    for(let i=1; i <=h; i++ ){
-        for(let j=1; j=i; j++){
-            if(j == 1 || j == i || i == h){
+    let m = h;
+    let n = h;
+    for(let i=1; i<=h; i++){
+        for(let j =1; j <= 2*h-1; j++){
+            if(j==m || j==n || i==h){
                 document.write("*");
             }else{
                 document.write("&nbsp&nbsp");
             }
         }
+        m--;
+        n++;
         document.write("<br/>");
     }
 </script>

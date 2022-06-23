@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let mang = [
+        [1, 2, 3],
+        [4, 5, 6],
+    ];
+    alert(mang.join(" "));
+    let min = mang[0][0];
+    let max = mang[0][0];
+    for(let i =0; i<2; i++){
+        for(let j=0; j<3; j++){
+            if(min > mang[i][j]){
+                min = mang[i][j];
+            }
+            if(max < mang[i][j]){
+                max = mang[i][j];
+            }
+        }
+    }
+    alert("Gía trị nhỏ là: "+min);
+    alert("Gía trị lớn nhất là: "+max);
+
+</script>
+</html>

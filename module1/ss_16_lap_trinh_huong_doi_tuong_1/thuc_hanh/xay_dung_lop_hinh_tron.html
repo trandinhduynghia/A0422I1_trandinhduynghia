@@ -8,17 +8,18 @@
 
 </body>
 <script>
-    function Circle(radius) {
-
-        this.radius = radius;
-        this.getRadius = function() {
-            return radius;
+    class Circle{
+        constructor(radius) {
+            this.radius = radius;
         }
-        this.getArea = function() {
+        getRadius(){
+            return this.radius;
+        }
+        getArea (){
             return Math.PI * radius * radius;
         }
-
     }
+
     let circle = new Circle(2);
     let radius = circle.getRadius();
 

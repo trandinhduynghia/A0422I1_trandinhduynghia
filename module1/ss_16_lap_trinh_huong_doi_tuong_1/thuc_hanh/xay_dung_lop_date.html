@@ -8,32 +8,23 @@
 
 </body>
 <script>
-    function MyDate(day, month, year){
+    class MyDate{
+        constructor(day, month, year) {
             this.day = day;
-
             this.month = month;
-
             this.year = year;
-
-        this.getDay = function() {
+        }
+        getDay(){
             return this.day;
         }
-        this.getMonth = function() {
+        getMonth(){
             return this.month;
         }
-        this.getYear = function() {
+        getYear(){
             return this.year;
         }
-        this.setDay = function(day) {
-            this.day  = day;
-        }
-        this.setMonth = function(month) {
-            this.month  = month;
-        }
-        this.setYear = function(year) {
-            this.year  = year;
-        }
     }
+
 
     let date = new MyDate(2, 2, 2007);
     let day = date.getDay();

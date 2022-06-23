@@ -8,23 +8,22 @@
 
 </body>
 <script>
-    function nhietdo(doC) {
-        this.doC = doC;
-
-        this.getdoF = function () {
-            return (doC * 1.8) + 32;
-
-        }
-        this.getkeVin = function () {
-            return doC + 273.15;
-
+    class nhietdo{
+        constructor(doC) {
+            this.doC = doC;
         }
 
+        doF() {
+            return (this.doC * 1.8) + 32;
+        }
+        keVin() {
+            return this.doC + 273.15;
+        }
     }
 
-    let doC = new nhietdo(25);
-    let doF = doC.getdoF();
-    let keVin = doC.getkeVin();
+    let doC = new nhietdo(parseInt(prompt("Nhập vào độ C: ")));
+    let doF = doC.doF();
+    let keVin = doC.keVin();
 
     alert("Độ F: "+doF+" Độ Kevin: "+keVin);
 </script>

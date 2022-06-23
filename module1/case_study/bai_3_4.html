@@ -8,17 +8,22 @@
 
 </body>
 <script>
-    let mang = [1, 2, 3];
-
-    for(let i = 0; i<mang; i++){
-        if(mang[i] == 1){
-            alert("một ");
-        }else if(mang[i] == 2){
-            alert("hai ");
-        }
-        else if(mang[i] == 3){
-            alert("ba ");
+    let so = prompt("Nhập vào số: ");
+    alert(so);
+    for(let i=0; i<so.length; i++){
+        if(so[i] == 0){
+            alert("không");
+        }else if(so[i] == 1){
+            alert("một");
+        }else if(so[i] == 2){
+            alert("hai");
         }
     }
+
+
+
+
+
+
 </script>
 </html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let xau1 = "aabcc";
+    let xau2 = "adcaa";
+    alert(xau1);
+    alert(xau2);
+    let dem = 0;
+
+    for(let i =0; i<xau1.length; i++){
+        for(let j=0; j<xau2.length; j++){
+            if(xau1[i] == xau2[j]){
+                dem++;
+                break;
+            }
+        }
+    }
+    alert("Số kí tự chung của hai xâu là: "+dem);
+</script>
+</html>

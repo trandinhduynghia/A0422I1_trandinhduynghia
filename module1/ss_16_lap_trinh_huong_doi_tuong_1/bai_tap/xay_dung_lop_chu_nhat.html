@@ -5,37 +5,43 @@
     <title>Title</title>
 </head>
 <body>
-
+<canvas id="DemoCanvas" width="500" height="600"></canvas>
 </body>
 <script>
-    function hinhchunhat(dai, rong) {
-        this.dai = dai;
-        this. rong = rong;
-
-        this.getDientich = function () {
-            return dai * rong;
-
-        }
-        this.getChuvi = function () {
-            return (dai + rong) / 2;
-
-        }
-        this.setDai = function (dai) {
+    class hinhchunhat{
+        constructor(dai, rong) {
             this.dai = dai;
-
-        }
-        this.setRong = function (rong) {
-            this.rong = rong;
-
+            this. rong = rong;
         }
 
+
+        Dientich () {
+            return (this.dai * this.rong);
+
+        }
+        Chuvi (){
+            return (this.dai + this.rong) * 2;
+
+        }
+        veCanvas (){
+            let canvas = document.getElementById("DemoCanvas");
+            if(canvas.getContext){
+                var ctx = canvas.getContext('2d');
+                ctx.fillStyle='#fa4b2a';
+                ctx.fillRect(10, 40, this.dai, this.rong);
+            }
+        }
     }
 
+    let chieudai = parseInt(prompt("Nhập vào chiều dài: "));
+    let chieurong = parseInt(prompt("Nhập vào chiều rộng: "));
 
-    let chunhat = new hinhchunhat(10,5);
-    let dientich = chunhat.getDientich();
-    let chuvi = chunhat.getChuvi();
+
+    let chunhat = new hinhchunhat(chieudai, chieurong);
+    let dientich = chunhat.Dientich();
+    let chuvi = chunhat.Chuvi();
 
     alert("Diện tích HCN: "+dientich+" Chu vi HCN: "+chuvi);
+    chunhat.veCanvas();
 </script>
 </html>
