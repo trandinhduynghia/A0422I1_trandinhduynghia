@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let arr = [1, 2, 3, 4, 5];
+    alert(arr.join(" "));
+    let num = parseFloat(prompt("Nhập vào số: "));
+    checkNumber(num, arr);
+
+    function checkNumber(num, arr) {
+        let count = 0;
+        for(let i = 0; i<arr.length; i++){
+            if(arr.indexOf(num) != -1){
+                alert("số "+num+" có nằm trong mảng");
+                count ++;
+                break;
+            }
+        }
+        if(count == 0){
+            alert("số "+num+" không nằm trong mảng");
+        }
+
+    }
+</script>
+</html>

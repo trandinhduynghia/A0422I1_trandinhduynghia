@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let string = "i love you";
+    alert(string);
+    alert("Trong chuỗi có "+demnguyenam(string)+" nguyên âm");
+    function demnguyenam(string) {
+        let nguyenam = ["u", "e", "o", "a", "i"];
+        let dem = 0;
+        for(let i = 0; i<string.length; i++){
+            for(let j = 0; j<nguyenam.length; j++){
+                if(string[i] == nguyenam[j]){
+                    dem ++;
+                }
+            }
+        }
+        if(dem == 0){
+            return 0;
+        }else{
+            return dem;
+        }
+    }
+</script>
+</html>

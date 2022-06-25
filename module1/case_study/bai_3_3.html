@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let a = [5, 2, 5];
+    let b = [6, 3, 4];
+    let max = 0;
+    for(let i = 0; i<a.length; i++){
+        for(let j = 0; j<b.length; j++){
+            let tam = parseFloat(a[i] / a[j]);
+            if(tam > max){
+                max = tam;
+            }
+
+        }
+
+    }
+    alert(max);
+</script>
+</html>

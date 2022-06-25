@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let so = parseFloat(prompt("Nhập vào số: "));
+
+    if(so == 2) {
+        alert("2 là SNT");
+    }
+
+    for(let i =2; i < so; i++){
+        if(so % i == 0){
+            alert(so + " không phải là SNT");
+            break;
+        }else{
+            alert(so + " là SNT");
+            break;
+        }
+    }
+
+</script>
+</html>

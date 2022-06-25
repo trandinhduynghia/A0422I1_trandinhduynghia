@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let so = parseFloat(prompt("Nhập vào số: "));
+    giaiThua(so);
+
+    function giaiThua(so) {
+        if(so == 0 ){
+            return alert("Giai thừa của 0! = 1");
+        }
+        let giaiThua = 1;
+        for(let i = 1; i <= so; i++){
+            giaiThua *= i;
+        }
+        return alert("Giai thừa của "+ so+ "! = "+ giaiThua);
+    }
+</script>
+</html>

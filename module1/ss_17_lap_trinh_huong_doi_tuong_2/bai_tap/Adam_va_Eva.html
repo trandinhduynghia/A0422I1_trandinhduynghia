@@ -9,31 +9,69 @@
 </body>
 <script>
     class Apple{
-        constructor(khoiluong) {
-            this.khoiluong = khoiluong;
+        constructor(weight) {
+            this.weight = weight;
         }
 
-        khoiLuong(){
-            this.khoiluong = 10;
+        getWeight(){
+            return this.weight;
 
         }
+        decrease(){
+            if(this.isEmpty()){
+                this.weight --;
+            }
+        }
+        isEmpty(){
+            return this.weight === 0 ? false : true;
+        }
+
     }
     class Human{
-        constructor(ten, gioitinh, cannang) {
-            this.ten = ten;
-            this.gioitinh = gioitinh;
-            this.cannang = cannang;
+        constructor(name, gender, weight) {
+            this.name = name;
+            this.gender = gender;
+            this.weight = weight;
         }
-        noi(){
+        checkApple(){
+            return Apple.isEmpty() ? true : flase;
+        }
+        eat(Apple) {
+            if (this.checkApple(Apple)) {
+                if (Apple.getWeight() < 2) {
+                    this.say('Miếng cuối cùng, mình cùng chia đôi nhé. Thôi em ăn nốt nha !')
+                } else {
+                    this.say('Ăn nữa đi !!');
+                }
+            } else {
+                this.say('Táo hết rồi, đi kiếm quả khác đi ...');
+            }
+            Apple.decrease();
+            this.weight++;
+        }
+        say(string){
             alert("Chào bạn! Tôi tên là "+ this.ten);
         }
-        kiemtratao(){
-            alert("Khối lượng quả táo là: "+ t);
+        getWeight(){
+            return this.weight;
+        }
+        setWeight(weight){
+            this.weight = weight;
         }
     }
 
-    let human = new Human("Nghĩa", "nam", "50");
-    human.noi();
+    let adam = new Human("Adam", "male", "75");
+    let eva = new Human("Eva", "Female", "50");
+    let apple = new Apple(10);
+
+    function run() {
+        while(apple.isEmpty()){
+            adam.eat(apple);
+            eva.eat.(apple);
+        }
+
+    }
+
 
 </script>
 </html>

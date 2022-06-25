@@ -8,15 +8,26 @@
 
 </body>
 <script>
-    let mangA = [1, 2, 3];
-    let mangB = [mangA.length];
 
-    mangB[0] = mangA[0];
-    for(let i = 1; i<mangB.length; i++){
-        tong = mangB[0];
-        mangB[i] = tong + mangA[i];
+    let a = [];
+
+
+    let n = prompt("Nhập số lượng giá trị trong mảng: ");
+    for (let i=0;i<n;i++)
+    {
+        a[i] =Number.parseInt( prompt("Nhập giá trị thứ " + i +": "));
     }
-    alert(mangB);
+    let b = new Array(a.length);
+    b[0] = a[0];
+    alert("Mảng A là: "+ a.join(" "));
+    //document.write("mang = ["+a+"]<br>")
+    for (let i=1;i<a.length;i++)
+    {
+        b[i] =parseInt ( b[i-1] + a[i]);
+    }
+    alert("Mảng B là: "+ b.join(" "));
+    //document.write("mang = ["+b+"]<br>")
+
 
 
 </script>
