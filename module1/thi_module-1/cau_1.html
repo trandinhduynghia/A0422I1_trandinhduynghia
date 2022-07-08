@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let nhap = parseFloat(prompt("Nhập vào số: "));
+    while (nhap < 0) {
+        nhap = parseFloat(prompt("Bạn nhập lại số: "));
+    }
+
+    for (let i = 1; i <= nhap; i++) {
+        if (nhap % i === 0) {
+            document.write(i + " ");
+        }
+    }
+
+</script>
+</html>

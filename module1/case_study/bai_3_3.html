@@ -8,19 +8,17 @@
 
 </body>
 <script>
-    let a = [5, 2, 5];
-    let b = [6, 3, 4];
-    let max = 0;
-    for(let i = 0; i<a.length; i++){
-        for(let j = 0; j<b.length; j++){
-            let tam = parseFloat(a[i] / a[j]);
-            if(tam > max){
-                max = tam;
-            }
-
+    let numerators   =  [5,2,5];
+    let denominators   =  [6,3,4];
+    let maxT,maxM;
+    let chiSo=0;
+    for (let i = 0; i <numerators.length ; i++) {
+        if (numerators[i]/denominators[i]<numerators[i+1]/denominators[i+1]){
+            maxT=numerators[i+1];
+            maxM=denominators[i+1];
+            chiSo=i+1;
         }
-
     }
-    alert(max);
+    document.write(maxT+"/"+maxM+"la phan so lon nhat co chi so la "+chiSo)
 </script>
 </html>

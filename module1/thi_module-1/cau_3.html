@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let mang = [];
+    let nhap = parseInt(prompt("Nhập số lượng giá trị trong mảng: "));
+    for (let i=0;i<nhap;i++)
+    {
+        mang[i] =Number.parseInt( prompt("Nhập giá trị thứ " + i +": "));
+    }
+    let so = parseInt(prompt("Nhập vào số: "));
+    alert("Mảng bạn vừa nhập: "+mang.join(" "));
+    lietKe(mang);
+
+    function lietKe(mang) {
+        for(let i = 0; i < mang.length; i++){
+            if(mang[i] % so == 0){
+                document.write(mang[i]+" ");
+            }
+        }
+    }
+
+</script>
+</html>

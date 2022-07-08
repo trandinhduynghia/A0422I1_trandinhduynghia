@@ -9,17 +9,18 @@
 </body>
 <script>
     let so = parseFloat(prompt("Nhập vào số: "));
-
-    if(so == 2) {
-        alert("2 là SNT");
+    if(so == 2){
+        alert(so+" là SNT");
     }
-
-    for(let i =2; i < so; i++){
+    if(so < 2){
+        alert(so+" không phải là SNT");
+    }
+    for(let i = 2; i<so; i++){
         if(so % i == 0){
-            alert(so + " không phải là SNT");
+            alert(so+" không phải là SNT");
             break;
         }else{
-            alert(so + " là SNT");
+            alert(so+" là SNT");
             break;
         }
     }

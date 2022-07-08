@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let mang = [1, 5, 6, 9, 99, 15, 50, 55, 67, 10];
+    alert(mang.join(" "));
+    for(let i=0; i<mang.length - 1; i++){
+        for(let j = i; j< mang.length; j++){
+            if(mang[i]<mang[j]){
+                let b = mang[i];
+                mang[i]=mang[j];
+                mang[j]=b;
+            }
+        }
+    }
+    alert("Mảng sau khi sắp xếp giảm dần:" +mang.join(" "));
+</script>
+</html>

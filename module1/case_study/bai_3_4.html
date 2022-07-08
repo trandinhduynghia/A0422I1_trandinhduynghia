@@ -8,39 +8,43 @@
 
 </body>
 <script>
-    let so = parseFloat(prompt("Nhập vào số: "));
-    alert(so);
-    for(let i=0; i<so.length; i++){
-        if(so[i] == 0){
-            alert("không");
-        }else if(so[i] == 1){
-            alert("một");
-        }else if(so[i] == 2){
-            alert("hai");
-        }else if(so[i] == 3){
-            alert("ba");
-        }else if(so[i] == 4){
-            alert("bốn");
-        } else if(so[i] == 5){
-            alert("năm");
-        }else if(so[i] == 6){
-            alert("sáu");
-        }else if(so[i] == 7){
-            alert("bảy");
-        }else if(so[i] == 8){
-            alert("tám");
-        }else if(so[i] == 9){
-            alert("chín");
+    let number = prompt("Nhập từ bàn phím một số bất kì")
+    for(let i = 0; i< number.length; i++){
+        switch (number.charAt(i)) {
+            case "0":
+                document.write('không ')
+                break;
+            case "1" :
+                document.write('một ')
+                break;
+            case "2" :
+                document.write('hai ')
+                break;
+            case "3" :
+                document.write('ba ')
+                break;
+            case "4" :
+                document.write('bốn ')
+                break;
+            case "5" :
+                document.write('năm ')
+                break;
+            case "6" :
+                document.write('sáu ')
+                break;
+            case "7" :
+                document.write('bảy ')
+                break;
+            case "8" :
+                document.write('tám  ')
+                break;
+            case "9" :
+                document.write('chín ')
+                break;
+
+            default:
         }
     }
-
-
-
-
-
-
-
-
-
 </script>
 </html>
+

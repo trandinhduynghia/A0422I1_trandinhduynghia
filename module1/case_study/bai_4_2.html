@@ -9,24 +9,40 @@
 </body>
 <script>
     let xau = "cabca";
+    alert(xau);
     let dem = 0;
-    let tam;
+    let tam = 0;
 
     for(let i=0; i<xau.length; i++){
         for(let j=0; j<xau.length; j++){
             if(xau[j] == xau[i]){
-                tam = 0;
+                tam ++;
                 break;
             }else{
-                tam = 1;
+                dem ++;
+                break;
             }
         }
-        if(tam == 1){
-            dem++;
-
-        }
-        return dem;
     }
-    alert(dem);
+    alert("Số kí tự khác nhau có trong mảng là: "+dem);
 </script>
 </html>
+let xau = "cabca";
+alert(xau);
+let dem = 0;
+let tam;
+
+for(let i=0; i<xau.length; i++){
+for(let j=0; j<x au.length; j++){
+if(xau[j] == xau[i]){
+tam = 0;
+break;
+}else{
+tam = 1;
+}
+}
+if(tam == 1){
+dem++;
+return dem;
+}
+}

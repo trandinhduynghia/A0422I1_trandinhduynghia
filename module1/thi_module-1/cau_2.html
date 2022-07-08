@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let mang = [];
+    let nhap = prompt("Nhập số lượng giá trị trong mảng: ");
+    for (let i=0;i<nhap;i++)
+    {
+        mang[i] =Number.parseInt(prompt("Nhập giá trị thứ " + i +": "));
+    }
+    alert("Mảng bạn vừa nhập: "+mang.join(" "));
+
+    timMax(mang);
+    timMin(mang);
+
+    function timMax(arr){
+        let max = arr[0];
+        for(let i =0; i < arr.length; i++){
+            if(arr[i] > max){
+                max = arr[i];
+
+            }
+        }
+        alert("Số lớn nhất trong mảng là: "+ max);
+    }
+
+    function timMin(arr) {
+        let min = arr[0];
+        for(let i =0; i < arr.length; i++){
+            if(arr[i] < min){
+                min = arr[i];
+            }
+        }
+        alert("Số bé nhất trong mảng là: "+ min);
+    }
+</script>
+</html>

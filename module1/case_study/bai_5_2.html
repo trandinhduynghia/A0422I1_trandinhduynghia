@@ -13,9 +13,8 @@
         [4, 5, 6],
     ];
     alert(mang.join(" "));
-
+    let dem = 0;
     for(let i =0; i<2; i++){
-        dem = 0;
         for(let j=0; j<3; j++){
             if(snt(mang[i][j])){
                 dem++;
@@ -25,10 +24,10 @@
     alert("Số lượng số nguyên tố: "+dem);
 
     function snt(a) {
-        if(a< 2){
+        if(a < 2){
             return false;
         }
-        for(let i=1; i<a; i++){
+        for(let i=2; i <= Math.sqrt(a); i++){
             if(a % i == 0) return false;
         }
         return true;

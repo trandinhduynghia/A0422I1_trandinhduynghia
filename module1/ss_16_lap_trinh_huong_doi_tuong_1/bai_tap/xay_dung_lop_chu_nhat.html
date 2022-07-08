@@ -8,18 +8,18 @@
 <canvas id="DemoCanvas" width="500" height="600"></canvas>
 </body>
 <script>
-    class hinhchunhat{
+    class HinhChuNhat{
         constructor(dai, rong) {
             this.dai = dai;
             this. rong = rong;
         }
 
 
-        Dientich () {
+        dienTich () {
             return (this.dai * this.rong);
 
         }
-        Chuvi (){
+        chuVi (){
             return (this.dai + this.rong) * 2;
 
         }
@@ -33,15 +33,15 @@
         }
     }
 
-    let chieudai = parseInt(prompt("Nhập vào chiều dài: "));
-    let chieurong = parseInt(prompt("Nhập vào chiều rộng: "));
+    let chieuDai = parseInt(prompt("Nhập vào chiều dài: "));
+    let chieuRong = parseInt(prompt("Nhập vào chiều rộng: "));
 
 
-    let chunhat = new hinhchunhat(chieudai, chieurong);
-    let dientich = chunhat.Dientich();
-    let chuvi = chunhat.Chuvi();
+    let chuNhat = new HinhChuNhat(chieuDai, chieuRong);
+    let dienTich = chuNhat.dienTich();
+    let chuVi = chuNhat.chuVi();
 
-    alert("Diện tích HCN: "+dientich+" Chu vi HCN: "+chuvi);
-    chunhat.veCanvas();
+    alert("Diện tích HCN: "+dienTich+" Chu vi HCN: "+chuVi);
+    chuNhat.veCanvas();
 </script>
 </html>
