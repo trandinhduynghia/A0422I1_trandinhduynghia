@@ -28,7 +28,7 @@ public class RemoveElementFromArray {
             }
         }
         n = c;
-        enterArray(arr, n);
+        outputArray(arr, n);
     }
 
     public static void enterArray(int[] arr, int n) {
