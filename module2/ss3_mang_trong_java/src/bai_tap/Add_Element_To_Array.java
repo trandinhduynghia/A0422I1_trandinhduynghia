@@ -1,5 +1,7 @@
 package bai_tap;
+
 import java.util.Scanner;
+
 public class Add_Element_To_Array {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -15,45 +17,31 @@ public class Add_Element_To_Array {
             }
         } while (isInvalidScore);
         int arr[] = new int[n];
-        for (int i = 0; i < n; i++) {
-            System.out.print("Nhập vào phần tử thứ " + i + ":");
-            arr[i] = scanner.nextInt();
-        }
-        for (int i = 0; i <= arr.length - 1; i++) {
-            System.out.print(arr[i] + "\t");
-        }
+        enterArray(arr, n);
+        outputArray(arr, n);
         System.out.print("\nNhập vào số bạn cần chèn: ");
         number = scanner.nextInt();
         System.out.print("Nhập vào vị trí bạn cần chèn: ");
         index = scanner.nextInt();
-        for(int i = arr.length-1; i > index; i--){
-            arr[i] = arr[i-1];
+        for (int i = arr.length - 1; i > index; i--) {
+            arr[i] = arr[i - 1];
         }
         arr[index] = number;
-        n ++;
+        n++;
         System.out.print("Mảng sau khi chèn:");
-        xuatMang(arr);
+        outputArray(arr, n);
     }
-    private static void nhapMang(int n,int arr[]){
-        Scanner scanner = new Scanner(System.in);
-        boolean isInvalidScore;
-        do {
-            System.out.print("Nhập vào số lượng phần tử của mảng:");
-            n = scanner.nextInt();
 
-            isInvalidScore = n < 0;
-            if (isInvalidScore) {
-                System.out.print("Số lượng phần tử phải lớn hơn 0!");
-            }
-        } while (isInvalidScore);
-        //int[] arr = new int[n];
+    public static void enterArray(int[] arr, int n) {
+        Scanner scanner = new Scanner(System.in);
         for (int i = 0; i < n; i++) {
-            System.out.print("Nhập vào phần tử thứ " + i + ":");
+            System.out.print("\nNhập vào phần tử thứ " + i + ":");
             arr[i] = scanner.nextInt();
         }
     }
-    private static void xuatMang(int[] arr) {
-        for (int i = 0; i <= arr.length - 1; i++) {
+
+    public static void outputArray(int arr[], int n) {
+        for (int i = 0; i < n; i++) {
             System.out.print(arr[i] + "\t");
         }
     }

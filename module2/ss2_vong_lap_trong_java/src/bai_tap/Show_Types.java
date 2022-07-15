@@ -17,15 +17,23 @@ public class Show_Types {
             choice = scanner.nextInt();
             switch (choice) {
                 case 1:
-                    for (int i = 1; i <= 3; i++) {
-                        for (int j = 1; j <= 7; j++) {
+                    int width, height;
+                    System.out.print("Nhập vào chiều rộng:");
+                    width = scanner.nextInt();
+                    System.out.print("Nhập vào chiều dài:");
+                    height = scanner.nextInt();
+                    for (int i = 1; i <= height; i++) {
+                        for (int j = 1; j <= width; j++) {
                             System.out.print("*");
                         }
                         System.out.print("\n");
                     }
                     break;
                 case 2:
-                    for (int i = 1; i <= 5; i++) {
+                    int height1;
+                    System.out.print("Nhập vào chiều cao:");
+                    height1 = scanner.nextInt();
+                    for (int i = 1; i <= height1; i++) {
                         for (int j = 1; j <= i; j++) {
                             System.out.print("*");
                         }
@@ -33,7 +41,10 @@ public class Show_Types {
                     }
                     break;
                 case 3:
-                    for (int i = 5; i >= 1; i--) {
+                    int height2;
+                    System.out.print("Nhập vào chiều cao:");
+                    height2 = scanner.nextInt();
+                    for (int i = height2; i >= 1; i--) {
                         for (int j = 1; j <= i; j++) {
                             System.out.print("*");
                         }
@@ -41,7 +52,10 @@ public class Show_Types {
                     }
                     break;
                 case 4:
-                    for (int i = 1; i <= 5; i++) {
+                    int height3;
+                    System.out.print("Nhập vào chiều cao:");
+                    height3 = scanner.nextInt();
+                    for (int i = 1; i <= height3; i++) {
                         for (int j = 5; j >= i; j--) {
                             System.out.print(" ");
                         }

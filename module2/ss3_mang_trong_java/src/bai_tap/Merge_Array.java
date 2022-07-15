@@ -5,33 +5,32 @@ import java.util.Scanner;
 public class Merge_Array {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int i, n1, n2;
+        int n1, n2;
+        boolean isInvalidScore;
         do {
-            //System.out.print("Số lượng phần tử phải lớn hơn 0!");
-            System.out.print("Nhập vào số phần tử của mảng 1:");
+            System.out.print("Nhập vào số lượng phần tử của mảng 1:");
             n1 = scanner.nextInt();
-        } while (n1 <= 0);
+
+            isInvalidScore = n1 < 0;
+            if (isInvalidScore) {
+                System.out.print("Số lượng phần tử phải lớn hơn 0!");
+            }
+        } while (isInvalidScore);
         int arr1[] = new int[n1];
-        for (i = 0; i < n1; i++) {
-            System.out.print("\nNhập vào phần tử thứ " + i + ":");
-            arr1[i] = scanner.nextInt();
-        }
-        for (i = 0; i <= arr1.length - 1; i++) {
-            System.out.print(arr1[i] + "\t");
-        }
+        enterArray(arr1,n1);
+        outputArray(arr1,n1);
         do {
-            //System.out.print("Số lượng phần tử phải lớn hơn 0!");
-            System.out.print("\nNhập vào số phần tử của mảng 2:");
+            System.out.print("\nNhập vào số lượng phần tử của mảng 2:");
             n2 = scanner.nextInt();
-        } while (n2 <= 0);
+
+            isInvalidScore = n2 < 0;
+            if (isInvalidScore) {
+                System.out.print("Số lượng phần tử phải lớn hơn 0!");
+            }
+        } while (isInvalidScore);
         int arr2[] = new int[n2];
-        for (i = 0; i < n2; i++) {
-            System.out.print("\nNhập vào phần tử thứ " + i + ":");
-            arr2[i] = scanner.nextInt();
-        }
-        for (i = 0; i <= arr2.length - 1; i++) {
-            System.out.print(arr2[i] + "\t");
-        }
+        enterArray(arr2,n2);
+        outputArray(arr2,n2);
         int c = arr1.length + arr2.length;
         int[] arr = new int[c];
         int pos = 0;
@@ -44,7 +43,17 @@ public class Merge_Array {
             pos++;
         }
         System.out.print("\nMảng sau khi gộp:");
-        for (i = 0; i <= arr.length - 1; i++) {
+        outputArray(arr,c);
+    }
+    public static void enterArray(int[] arr, int n) {
+        Scanner scanner = new Scanner(System.in);
+        for (int i = 0; i < n; i++) {
+            System.out.print("\nNhập vào phần tử thứ " + i + ":");
+            arr[i] = scanner.nextInt();
+        }
+    }
+    public static void outputArray(int arr[], int n) {
+        for (int i = 0; i < n; i++) {
             System.out.print(arr[i] + "\t");
         }
     }
