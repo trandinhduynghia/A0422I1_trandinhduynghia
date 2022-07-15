@@ -1,10 +1,8 @@
 package bai_tap;
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class Find_Min_Array {
+public class FindMinArray {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n;

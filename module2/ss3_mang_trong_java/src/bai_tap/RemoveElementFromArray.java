@@ -2,7 +2,7 @@ package bai_tap;
 
 import java.util.Scanner;
 
-public class Remove_Element_From_Array {
+public class RemoveElementFromArray {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int c, i, n;
@@ -45,4 +45,3 @@ public class Remove_Element_From_Array {
         }
     }
 }
-

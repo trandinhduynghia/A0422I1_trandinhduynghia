@@ -2,10 +2,10 @@ package bai_tap;
 
 import java.util.Scanner;
 
-public class Find_Max_Two_Dimensional_Array {
+public class SumColumn {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int line, column;
+        int line, column, column1, sum = 0;
         boolean isInvalidScore;
         do {
             System.out.print("Nhập vào số dòng:");
@@ -17,28 +17,15 @@ public class Find_Max_Two_Dimensional_Array {
                 System.out.print("Số lượng dòng và cột phải lớn hơn 0!");
             }
         } while (isInvalidScore);
-
         int arr[][] = new int[line][column];
         enterArray(arr, line, column);
         outputArray(arr, line, column);
-
-
-        int max = arr[0][0];
+        System.out.print("Nhập vào cột: ");
+        column1 = scanner.nextInt();
         for (int i = 0; i < line; i++) {
-            for (int j = 0; j < column; j++) {
-                if (arr[i][j] > max) {
-                    max = arr[i][j];
-                }
-            }
+            sum += arr[i][column1];
         }
-        System.out.print("Phần tử lớn nhất trong mảng 2 chiều:" + max);
-        for (int i = 0; i < line; i++) {
-            for (int j = 0; j < column; j++) {
-                if (arr[i][j] == max) {
-                    System.out.print("\nVị trí của phần tử lớn nhất: " + i + " : " + j);
-                }
-            }
-        }
+        System.out.print("Tổng các số trên cột thứ " + column1 + ":" + sum);
     }
 
     public static void enterArray(int arr[][], int line, int column) {

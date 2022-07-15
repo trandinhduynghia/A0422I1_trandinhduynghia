@@ -2,7 +2,7 @@ package bai_tap;
 
 import java.util.Scanner;
 
-public class Merge_Array {
+public class MergeArray {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n1, n2;

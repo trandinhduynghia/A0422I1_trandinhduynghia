@@ -2,7 +2,7 @@ package bai_tap;
 
 import java.util.Scanner;
 
-public class Sum_Diagonal_Line {
+public class SumDiagonalLine {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n;

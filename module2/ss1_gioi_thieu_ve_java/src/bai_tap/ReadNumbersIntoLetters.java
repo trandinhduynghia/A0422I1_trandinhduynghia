@@ -2,7 +2,7 @@ package bai_tap;
 
 import java.util.Scanner;
 
-public class Read_Numbers_Into_Letters {
+public class ReadNumbersIntoLetters {
     public static String unit(int number) {
         switch (number) {
             case 0:

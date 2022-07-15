@@ -2,7 +2,7 @@ package bai_tap;
 
 import java.util.Scanner;
 
-public class Count_Character_String {
+public class CountCharacterString {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String name;

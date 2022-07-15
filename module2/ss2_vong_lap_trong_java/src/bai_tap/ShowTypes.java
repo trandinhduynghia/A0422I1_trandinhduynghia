@@ -1,14 +1,12 @@
 package bai_tap;
-
 import java.util.Scanner;
-
-public class Show_Types {
+public class ShowTypes {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int choice = -1;
         while (choice != 0) {
             System.out.println("Menu");
-            System.out.println("1. In hình chũ nhật");
+            System.out.println("1. In hình chữ nhật");
             System.out.println("2. In hình tam giác vuông, có cạnh góc vuông ở phía dưới bên trái");
             System.out.println("3. In hình tam giác vuông, có cạnh góc vuông ở phía trên bên trái");
             System.out.println("4. Inh ình tam giác cân");
@@ -73,4 +71,3 @@ public class Show_Types {
         }
     }
 }
-
